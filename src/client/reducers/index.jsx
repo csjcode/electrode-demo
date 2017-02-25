@@ -11,13 +11,25 @@ const checkBox = (store, action) => {
 };
 
 const number = (store, action) => {
-  if (action.type === "INC_NUMBER") {
+  if (action.type === "CLEAR_CHECK") {
+    return {
+      value: 0
+    };
+  } else if  (action.type === "INC_NUMBER") {
     return {
       value: store.value + 1
     };
   } else if (action.type === "DEC_NUMBER") {
     return {
       value: store.value - 1
+    };
+  } else if  (action.type === "INC_NUMBER_FIVE") {
+    return {
+      value: store.value + 6
+    };
+  } else if (action.type === "DEC_NUMBER_FIVE") {
+    return {
+      value: store.value - 5
     };
   }
 
