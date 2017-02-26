@@ -7,6 +7,12 @@ body {
   font: 12px Helvetica, Arial, sans-serif;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justifyContent: space-around;
+}
+
 a.button {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;

@@ -50,23 +50,17 @@ class Home extends React.Component {
           <div>
             <h1>&nbsp;{value}&nbsp;</h1>
           </div>
-        <div className="wrapper">
-          <div>
+        <div>
+          <div style={{float:'left'}}>
             <button type={"button"} onClick={props.onDecrease}>-</button>
             <button type={"button"} onClick={props.onIncrease}>+</button>
-          </div>
-          <div>
             <button type={"button"} onClick={props.onDecreaseFive}>-5</button>
             <button type={"button"} onClick={props.onIncreaseFive}>+5</button>
+            <button type={"button"} onClick={props.onClearCheck}>CLEAR</button>
           </div>
+
         </div>
-        <div>
-          <div style={{padding:10}}>
-            <button type={"button"} onClick={props.onClearCheck}>-</button>
-            {/* }<input onChange={props.onClearCheck} type={"checkbox"} checked={checkedClear}/> */}
-            Clear
-          </div>
-        </div>
+
         <div className="images">
           {imageUrls.map((imageUrl, index) => this.renderImage(imageUrl, index))}
         </div>
